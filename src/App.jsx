@@ -47,10 +47,12 @@ export default function App() {
   }
 
   return(
-    <>
+    <section className='app' >
       <TodoForm onSubmit={addTodo}/>
-      <h1 className="header">Todo list</h1>
-      <TodoList todo={todos}  deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
-    </>
+      <section className="todo-section">
+        <h1 className="header">Todo list</h1>
+        <TodoList todo={todos}  deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+      </section>
+    </section>
   )
 }
